@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>sad</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style type="text/css">
+	@keyframes move{
+		0%{
+			transform:translateY(-5px);
+		}
+		100%{
+			transform:translateY(20px);
+		}
+	}
+	@keyframes sad{
+		0%{
+			transform:translateY(-10px);
+			transform:scale(0.8);
+			
+		}
+		100%{
+			transform:translateY(20px);
+		}
+	}
+	@keyframes eyeL{
+		0%{
+			transform:translateY(-60px);
+			transform:scale(0.4);
+			opacity: 0;
+		}
+		50%{
+			transform:translateY(40px);
+			opacity: 1;
+		}
+		100%{
+			transform:translateY(45px);
+			opacity: 0;
+		}
+	}
+
+	div{
+		width: 120px;
+		height: 120px;
+		background: #ffda6a;
+		border-radius: 50%;
+		position: relative;
+		
+	}
+	.eye{
+		position: absolute;
+		left: 17px;
+		top: 20px;
+		animation: move 1s infinite alternate;
+	}
+	.zui{
+		position: absolute;
+		left:39px;
+		top:61px;
+		animation:sad 1s infinite alternate;
+	}	
+	.yanL{
+		position: absolute;
+		left:15px;
+		top:51px;
+		animation:eyeL 2s infinite;
+	}
+	.yanR{
+		position: absolute;
+		left:84px;
+		top:51px;
+		animation:eyeL 2s infinite;
+	}
+</style>
+</head>
+<body>
+    <div>
+    	<img src="img/eye.png" alt="" class="eye" />
+    	<img src="img/zui.png" alt="" class="zui" />
+    	<img src="img/lei.png" alt="" class="yanL">
+    	<img src="img/lei.png" alt="" class="yanR">
+    </div>
+</body>
+</html>
